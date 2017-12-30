@@ -41,7 +41,7 @@ public class List {
     @SerializedName("title")
     private String mTitle;
     @SerializedName("topics")
-    private java.util.List<Object> mTopics;
+    private java.util.List<String> mTopics;
     @SerializedName("urls")
     private Urls mUrls;
 
@@ -173,11 +173,11 @@ public class List {
         mTitle = title;
     }
 
-    public java.util.List<Object> getTopics() {
+    public java.util.List<String> getTopics() {
         return mTopics;
     }
 
-    public void setTopics(java.util.List<Object> topics) {
+    public void setTopics(java.util.List<String> topics) {
         mTopics = topics;
     }
 

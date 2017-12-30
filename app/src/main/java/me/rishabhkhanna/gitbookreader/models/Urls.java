@@ -18,16 +18,18 @@ public class Urls {
     private Download mDownload;
     @SerializedName("edit")
     private String mEdit;
+    @SerializedName("explore")
+    private String mExplore;
     @SerializedName("git")
     private String mGit;
     @SerializedName("homepage")
     private String mHomepage;
-    @SerializedName("members")
-    private String mMembers;
     @SerializedName("profile")
     private String mProfile;
     @SerializedName("read")
     private String mRead;
+    @SerializedName("stars")
+    private String mStars;
 
     public String getAccess() {
         return mAccess;
@@ -69,6 +71,14 @@ public class Urls {
         mEdit = edit;
     }
 
+    public String getExplore() {
+        return mExplore;
+    }
+
+    public void setExplore(String explore) {
+        mExplore = explore;
+    }
+
     public String getGit() {
         return mGit;
     }
@@ -85,14 +95,6 @@ public class Urls {
         mHomepage = homepage;
     }
 
-    public String getMembers() {
-        return mMembers;
-    }
-
-    public void setMembers(String members) {
-        mMembers = members;
-    }
-
     public String getProfile() {
         return mProfile;
     }
@@ -107,6 +109,14 @@ public class Urls {
 
     public void setRead(String read) {
         mRead = read;
+    }
+
+    public String getStars() {
+        return mStars;
+    }
+
+    public void setStars(String stars) {
+        mStars = stars;
     }
 
 }

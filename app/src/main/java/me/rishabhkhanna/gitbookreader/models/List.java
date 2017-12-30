@@ -1,11 +1,8 @@
 
 package me.rishabhkhanna.gitbookreader.models;
 
-import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("net.hexar.json2pojo")
-@SuppressWarnings("unused")
 public class List {
 
     @SerializedName("author")
@@ -137,8 +134,8 @@ public class List {
         return mPublic;
     }
 
-    public void setPublic(Boolean public) {
-        mPublic = public;
+    public void setPublic(Boolean _public) {
+        mPublic = _public;
     }
 
     public Publish getPublish() {

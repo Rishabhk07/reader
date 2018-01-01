@@ -13,6 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class API {
     public static API apiInstance;
     public Retrofit retrofit;
+
     Context context;
     public API(Context context){
         this.context = context;

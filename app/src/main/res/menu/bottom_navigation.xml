@@ -11,12 +11,13 @@
         android:id="@+id/menu_topics"
         android:icon="@drawable/ic_tag"/>
 
-    <item android:title="Library"
+    <item
+        android:title="Library"
         android:id="@+id/menu_library"
         android:icon="@drawable/ic_book"/>
 
     <item android:title="Author"
-        android:id="you"
-        android:icon="@drawable/ic_telescope"
+        android:id="@+id/menu_author"
+        android:icon="@drawable/ic_telescope"/>
 
 </menu>

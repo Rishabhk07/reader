@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
                         Log.d(TAG, "onNavigationItemSelected: author selected");
                         break;
                 }
-
                 return true;
             }
         });

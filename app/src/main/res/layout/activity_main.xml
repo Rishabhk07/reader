@@ -15,7 +15,8 @@
         app:itemBackground="@android:color/white"
         app:itemIconTint="@android:color/secondary_text_dark_nodisable"
         app:itemTextColor="@android:color/tertiary_text_dark"
-        app:menu="@menu/bottom_navigation" />
+        app:menu="@menu/bottom_navigation"
+        />
 
 
 </LinearLayout>

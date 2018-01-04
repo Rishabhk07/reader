@@ -35,7 +35,7 @@ public class BottomNavigationHelper {
             }
         }
 
-        fun getBottomNavigationMenu(bottomNavigationView: AHBottomNavigation){
+        fun setupBottomNavigationView(bottomNavigationView: AHBottomNavigation){
 
 // items on navigaiton bottom bar
             val explore:AHBottomNavigationItem = AHBottomNavigationItem("Explore", R.drawable.ic_telescope);
@@ -46,14 +46,13 @@ public class BottomNavigationHelper {
             bottomNavigationView.addItem(topic)
             bottomNavigationView.addItem(library)
             bottomNavigationView.addItem(author)
-
+//           set title to always show
+            bottomNavigationView.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW)
 //            set color
             bottomNavigationView.accentColor = Color.rgb(61,135,251);
             bottomNavigationView.inactiveColor = Color.parseColor("#323232")
-
-//            bottomNavigationView.setTitleTextSize(42f,42f)
-
-//            bottomNavigationView.
+//            set title text Size
+            bottomNavigationView.setTitleTextSize(40f,40f)
         }
     }
 }

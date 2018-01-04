@@ -48,5 +48,6 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.google.code.gson:gson:2.8.1'
     compile 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    compile 'com.aurelhubert:ahbottomnavigation:2.1.0'
     testCompile 'junit:junit:4.12'
 }

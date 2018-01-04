@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+
 import me.rishabhkhanna.gitbookreader.R;
+import me.rishabhkhanna.gitbookreader.utils.BottomNavigationHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,28 +20,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                switch (item.getItemId()){
-                    case R.id.menu_explore:
-                        Log.d(TAG, "onNavigationItemSelected: Explore selected");
-                        break;
-                    case R.id.menu_topics:
-                        Log.d(TAG, "onNavigationItemSelected: topics selected");
-                        break;
-                    case R.id.menu_library:
-                        Log.d(TAG, "onNavigationItemSelected: library selected");
-                        break;
-                    case R.id.menu_author:
-                        Log.d(TAG, "onNavigationItemSelected: author selected");
-                        break;
-                }
-                return true;
-            }
-        });
+        AHBottomNavigation bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
+        BottomNavigationHelper.Companion.getBottomNavigationMenu(bottomNavigation);
+        bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
     }
 }

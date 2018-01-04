@@ -1,5 +1,6 @@
 package me.rishabhkhanna.gitbookreader.view.activities;
 
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AHBottomNavigation bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
-        BottomNavigationHelper.Companion.getBottomNavigationMenu(bottomNavigation);
-        bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
+        BottomNavigationHelper.Companion.setupBottomNavigationView(bottomNavigation);
     }
 }

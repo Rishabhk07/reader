@@ -1,5 +1,6 @@
 package me.rishabhkhanna.gitbookreader.utils
 
+import android.graphics.Color
 import android.support.design.internal.BottomNavigationItemView
 import android.support.design.internal.BottomNavigationMenuView
 import android.support.design.widget.BottomNavigationView
@@ -46,6 +47,13 @@ public class BottomNavigationHelper {
             bottomNavigationView.addItem(library)
             bottomNavigationView.addItem(author)
 
+//            set color
+            bottomNavigationView.accentColor = Color.rgb(61,135,251);
+            bottomNavigationView.inactiveColor = Color.parseColor("#323232")
+
+//            bottomNavigationView.setTitleTextSize(42f,42f)
+
+//            bottomNavigationView.
         }
     }
 }

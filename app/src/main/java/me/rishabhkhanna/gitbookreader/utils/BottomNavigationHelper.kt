@@ -41,7 +41,7 @@ public class BottomNavigationHelper {
             val explore:AHBottomNavigationItem = AHBottomNavigationItem("Explore", R.drawable.ic_telescope);
             val topic:AHBottomNavigationItem = AHBottomNavigationItem("Topics", R.drawable.ic_tag);
             val library:AHBottomNavigationItem = AHBottomNavigationItem("Library", R.drawable.ic_book);
-            val author:AHBottomNavigationItem = AHBottomNavigationItem("Author", R.drawable.ic_telescope);
+            val author:AHBottomNavigationItem = AHBottomNavigationItem("Author", R.drawable.ic_person);
             bottomNavigationView.addItem(explore)
             bottomNavigationView.addItem(topic)
             bottomNavigationView.addItem(library)

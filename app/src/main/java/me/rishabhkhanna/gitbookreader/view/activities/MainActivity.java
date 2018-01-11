@@ -23,5 +23,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         AHBottomNavigation bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
         BottomNavigationHelper.Companion.setupBottomNavigationView(bottomNavigation);
+
+        bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
+            @Override
+            public boolean onTabSelected(int position, boolean wasSelected) {
+                switch(position){
+                    case 0:
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+
+                }
+                return false;
+            }
+        });
     }
 }

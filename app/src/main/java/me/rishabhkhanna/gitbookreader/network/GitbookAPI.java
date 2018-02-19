@@ -15,7 +15,7 @@ public class GitbookAPI {
 
     public GitbookAPI(Context context) {
         this.retrofit = new Retrofit.Builder()
-                .baseUrl("https://www.gitbook.com")
+                .baseUrl("https://www.gitbook.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }

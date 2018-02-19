@@ -10,7 +10,7 @@ import retrofit2.http.Path;
  * Created by rishabhkhanna on 11/01/18.
  */
 
-public interface apiInterface {
+public interface ApiInterface {
 
     @GET("author/{authorName}/books")
     Call<AuthorBooks> getBooksByAuthor(

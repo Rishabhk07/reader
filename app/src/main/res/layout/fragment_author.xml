@@ -4,10 +4,8 @@
     android:layout_height="match_parent"
     tools:context="me.rishabhkhanna.gitbookreader.view.fragments.AuthorFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="author" />
-
+        android:id="@+id/rvAuthor" />
 </FrameLayout>
